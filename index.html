@@ -21,9 +21,9 @@
       let corsHost = "https://steam-miniprofile-cors.glitch.me/"
       let steamId = searchParams.get('accountId') ? searchParams.get('accountId') : '238158335';
       // For list of available languages, check out README on https://github.com/gamer2810/steam-miniprofile
-      let language = searchParams.get('lang') ? searchParams.get('lang') : 'english';
+      let language = searchParams.get('lang') ? searchParams.get('lang') : 'schinese';
       if(steamId === 'YOUR_ACCOUNTID_HERE') {
-        steamId = '238158335';
+        steamId = '1115115598';
       }
 
       $.get(`${corsHost}https%3A%2F%2Fsteamcommunity.com%2Fminiprofile%2F${steamId}?l=${language}`, function (data) {
@@ -56,8 +56,8 @@
           srcset="https://avatars.akamai.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_medium.jpg 1x, https://avatars.akamai.steamstatic.com/fef49e7fa7e1997310d705b2a6158ff8dc1cdfeb_full.jpg 2x">
       </div>
       <div class="player_content">
-        <span class="persona offline">Loading</span>
-        <span class="friend_status_offline">Offline</span>
+        <span class="persona offline">加载中</span>
+        <span class="friend_status_offline">离线</span>
       </div>
     </div>
     <div class="miniprofile_detailssection  not_in_game miniprofile_backdrop">
@@ -66,14 +66,14 @@
           src="https://cdn.akamai.steamstatic.com/steamcommunity/public/images/items/206440/67e23690ce7aad7e097d828463fb0adf4932a5ab.png"
           class="badge_icon">
         <div class="description">
-          <div class="name">Unknown</div>
-          <div class="xp">? XP</div>
+          <div class="name">未知</div>
+          <div class="xp">? 经验值</div>
         </div>
       </div>
       <div class="miniprofile_featuredcontainer">
         <div class="friendPlayerLevel lvl_0"><span class="friendPlayerLevelNum">?</span></div>
         <div class="description">
-          <div class="name">Steam Level</div>
+          <div class="name">Steam 等级</div>
         </div>
       </div>
     </div>
